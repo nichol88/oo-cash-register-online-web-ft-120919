@@ -32,6 +32,7 @@ class CashRegister
 
   def void_last_transaction
 
+    @items.pop(@items.length - @last_item[2])
   end
 
 end
