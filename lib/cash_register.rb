@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor :discount, :total, :item
+  attr_accessor :discount, :total, :last_item
 
   @items = []
 
