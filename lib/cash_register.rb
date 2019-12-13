@@ -8,8 +8,13 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    d = (100.00 - @discount) / 100.00
-    @total += price * quantity * d
 
+    @total += price * quantity
+
+  end
+
+  def apply_discount
+    d = (100.00 - @discount) / 100.00
+    @total *= d
   end
 end
